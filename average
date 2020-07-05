@@ -1,0 +1,25 @@
+/*
+ * Function Average
+ */
+
+/* The function accepts an infinite number of values
+*  Assigns the values to a list
+*  Loops through the list using the for...of loop in ES6
+*  Calculates and returns the average
+*/ The function returns Zero if no parameter is assigned to the function
+
+function average(...nums) {
+    let total = 0;
+    let count = 0;
+    let ave = 0;
+    if (!nums.length) {
+        return 0;
+    } else {
+    for(const num of nums) {
+        total += num;
+        count +=1;
+        }
+    }
+    ave = total / count;
+    return ave;
+}
